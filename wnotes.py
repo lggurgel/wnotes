@@ -1,3 +1,4 @@
+import os
 import pickle
 from pprint import pprint
 
@@ -60,9 +61,10 @@ def read_note():
 
 if __name__ == "__main__":
 
-    # note = {}
-    # while note.get("name") != "casamentofoda":
-    #     note = read_note
+    os.system("clear")
+
     print(BANNER)
-    read_note()
-    print_notes()
+
+    while True:
+        read_note()
+        print_notes()
